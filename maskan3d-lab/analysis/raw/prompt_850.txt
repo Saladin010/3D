@@ -1,0 +1,70 @@
+<USER_REQUEST>
+اللي تقدر تعتمد عليه
+المتطلبات 8 و9 (المعدات والتكلفة): الهاتف عادي والتشغيل مجاني فعلًا، بشرط الملاحظة تحت عن تكلفة التوسع.
+تدقيق التراخيص: الاتجاه صح. SiftGPU وأوزان SuperPoint/SuperGlue غير تجارية بحسب معرفتي، وده يخلّي خلية hloc في النوتبوك للتجربة فقط وليست للإنتاج. لو الإنتاج هيعتمد على COLMAP بالـ CPU، لازم تتأكد من نسخة COLMAP اللي هتستخدمها لأن مكوّنات SIFT اتغيّرت بين الإصدارات.
+بروتوكول المعايرة المترية: الفكرة صح (مسافة معروفة ← معامل مقياس ← قياس جدار مستقل).
+الحدود النظرية لـ splat مقابل Matterport: صح، وده أهم جزء في التقرير.
+اللي لازم يتصحح
+
+1. جدول الفجوات بيحكم بـ MET أسرع من اللازم
+
+المتطلب 5 (الحجم): “MET” بس على نسخة 5000 iteration وبعد حذف الـ SH والتقليم، من غير ما حد يشوف الجودة البصرية بعدها. الصح: MET مشروطًا، والرقم حد أدنى.
+المتطلب 6 (الزمن): الـ 5 دقايق لغرفة واحدة وصورها 26. المواصفة بتقول شقة كاملة. الصح: UNKNOWN للشقة.
+المتطلب 9: تكلفة RunPod/Modal بـ 0.10 دولار للشقة رقم مش مقاس ومالوش مصدر. الاستخدام التجاري على الحصة المجانية لـ Kaggle شرطه غير متحقق منه.
+المتطلب 11 (الواجهة العربية): الدليل المذكور هو ملفات اللغات في SuperSplat، وده مش مشروعك. واجهتك أنت لسه ما اتبنتش، فالحالة NOT YET BUILT مش NOT MET.
+
+2. أرقام احتمالات المخاطر مخترعة
+85% و80% و90% و95% مالهاش أي قياس، وده بالظبط اللي القواعد منعته. اطلب منه يستبدلها بـ عالي/متوسط/منخفض مع تبرير.
+
+3. "دليل رياضي قاطع" على قصر الـ baseline مبالغة، وأنا شاركت فيها
+في ملاحظاتي السابقة قلت إن خفض init_min_tri_angle لـ 3 درجات "دليل قوي". ده كان أقوى مما تسمح به المعطيات. إحنا ما نعرفش إن COLMAP بالقيمة الافتراضية فشل فعلًا، ممكن القيمة كانت مضبوطة من الأول في النوتبوك. فكسب الثقة في "الـ baseline ضيق" لازم ييجي من transforms.json، مش من الإعداد ده.
+
+4. رقم الـ 48.31% ثقوب الأرضية الأساس بتاعه هش
+حساب الثقوب بيعتمد على اكتشاف مستوى الأرضية والمحور الرأسي، وده نفس الجزء اللي إحنا قلنا إنه غير موثوق (زوايا 27° و46° بين "الجدران"). المحور الرأسي طلع مائل حوالي 30° عن المحور X. يعني الرقم ممكن يكون ناتج عن أرضية مكتشفة غلط. ما تعتبرهوش سبب القرار.
+
+5. تجربة المعايرة (رقم 1) فيها مشكلتين
+
+"صفر دقيقة GPU على بيانات موجودة" ما ينفعش إلا لو إنت قست مسافة حقيقية في نفس الغرفة اللي اتصورت. ولو ما قستش، لازم تعيد التصوير.
+ورقة A4 (29.7 سم) قصيرة، وأي خطأ في تحديد طرفيها بيتضاعف لما نضرب في المقياس. استخدم مسافة 1 متر أو أكتر (شريط على الأرض، أو عرض باب).
+ومع سحابة splat مشوشة، تحديد نقطتين بدقة سنتيمترية صعب. الأحسن تقيس على نقاط COLMAP المتفرقة (sparse points) لما تتوفر.
+
+6. قرار "ما تشغّلش 30000 على الصور الحالية" ما يتبررش بالتكلفة
+التجربة بتاخد حوالي 20 دقيقة على Kaggle. وحجة "هتزوّد العوالق وبس" تخمين. شغّلها بالتوازي في الخلفية، لأنها بتديك baseline مقارنة. بس ما تبنيش عليها أي قرار منتج.
+
+اللي ناقص من الخطة
+
+الخمس تجارب كلها بتحسّن الـ splat. ولا واحدة بتختبر مسار الـ Dollhouse نفسه (جدران مستقيمة، أرضية مكتملة، سقف مقصوص)، وده المتطلب رقم 1 وقلب المنتج. قص السقف بمستوى قطع سهل، لكن الجدران المغلقة والأرضية المكتملة مش هتطلع من الـ splat لوحده. أضف تجربة 6 تقيّم مسار هندسي (استخراج مستويات أو mesh)، مع تدقيق الترخيص لأي أداة قبل ما تقترحها. أنا ما أعرفش لسه أنهي مشروع بالتحديد يستاهل، فخلّي Antigravity يتحقق من ملفات LICENSE بدل ما يخمّن.
+
+اللي أنصحك تعمله دلوقتي
+صوّر فيديو مدته 60 إلى 90 ثانية للغرفة نفسها، واتحرك ببطء وبشكل متصل (مش لف في مكانك)، وخلّي الكاميرا مايلة شوية لتحت في جزء من الجولة.
+استخدم العدسة الرئيسية وأعلى دقة متاحة. الصور الحالية 2560×1440 والبعد البؤري المسجّل 1.4 مم، وفي الغالب ده معناه إنها اتصورت بوضع أو عدسة مش مناسبة، بس ما أقدرش أأكد ده من الملفات.
+حط شريط قياس 1 متر على الأرض ظاهر في الفيديو، وسجّل مسافة مقاسة تانية (عرض باب مثلًا) للتحقق.
+شغّل النوتبوك بمسار الفيديو (sequential)، بـ sh-degree 0 و15000 iteration.
+اجمع الملفات الناقصة اللي مانعة التحليل الأعمق: transforms.json، وcolmap/sparse/0، و4 لقطات شاشة جديدة من الـ .ply.
+بروميت تصحيح للتقرير
+Update analysis/reports/03_gap_and_plan.md. Edit only the items below; keep everything else.
+
+1. Gap table: set #5 to "CONDITIONALLY MET (5000-iteration run, no visual check after SH removal/pruning)"; #6 to "MET for one room / UNKNOWN for a full apartment"; #9: mark the RunPod/Modal $0.10 figure as UNSOURCED ESTIMATE and add "commercial use of free Kaggle tier: not verified"; #11: change to "NOT YET BUILT" and remove the SuperSplat locales evidence (it is not our viewer).
+2. Risk register: remove all numeric probabilities (85%, 80%, 90%, 95%...). Use High/Medium/Low with a one-line justification each, tagged INFERRED.
+3. Replace the phrase "mathematically conclusive evidence" about init_min_tri_angle with: "hint only; we do not know whether the default failed or the value was set in the notebook up front. Check the notebook/log for where 3.0 came from. Confirm baseline from transforms.json."
+4. The 48.31% floor-hole figure depends on the detected up-axis and floor plane, which report 02 flagged as unreliable. Mark it UNRELIABLE and remove it from the Executive Summary and the Decision rationale.
+5. Experiment 1: require the reference distance be at least 1 m, measured in the SAME room that was photographed, and add: if no real measurement exists for the current capture, the experiment requires a recapture. Replace "0 GPU minutes" accordingly. Prefer measuring on COLMAP sparse points when colmap/sparse/0 is available.
+6. Experiment 3: remove the "~25% faster" and "PSNR drop 2.5 dB" claims unless computed from a log; mark them as proposed thresholds.
+7. Experiment 4: change from "skip" to "run in the background in parallel with the video capture; use only as a baseline; no product decision depends on it".
+8. Add Experiment 6: dollhouse path evaluation (room layout / plane or mesh extraction from the capture). Scope: candidate list only; for each candidate read its LICENSE file in a clone under repos/ and report SPDX id + commercial verdict; if not cloned, write "licence not verified". Do not recommend anything whose licence is unverified.
+9. Licence table: ALIKED is mentioned as a safe alternative but is not verified; change to "candidate, code and weights licences not verified". Add that the hloc cell in the notebook must be labelled "research use only".
+10. Do not add new numbers. Anything not computed by a script in analysis/scripts/ must be tagged INFERRED or UNSOURCED.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-11-01T21:26:57+02:00.
+
+The user's current state is as follows:
+Active Document: d:\Projects\maskan-lab\maskan3d-lab\analysis\reports\03_gap_and_plan.md (LANGUAGE_UNSPECIFIED)
+Cursor is on line: 1
+Other open documents:
+- d:\Projects\maskan-lab\maskan3d-lab\analysis\scripts\06_ply_structure_and_distributions.py (LANGUAGE_UNSPECIFIED)
+- d:\Projects\maskan-lab\maskan3d-lab\analysis\scripts\04_colmap_log_analysis.py (LANGUAGE_UNSPECIFIED)
+- d:\Projects\maskan-lab\maskan3d-lab\analysis\scripts\03_image_quality.py (LANGUAGE_UNSPECIFIED)
+- d:\Projects\maskan-lab\p.md (LANGUAGE_UNSPECIFIED)
+- d:\Projects\maskan-lab\maskan3d-lab\requirements.txt (LANGUAGE_UNSPECIFIED)
+</ADDITIONAL_METADATA>

@@ -1,0 +1,1801 @@
+{
+  "database": {
+    "cameras": 1,
+    "total_images": 26,
+    "connected_images": 26,
+    "verified_match_pairs_ge_15": 230,
+    "possible_image_pairs_total": 325,
+    "connectivity_ratio": 0.708
+  },
+  "reconstruction": {
+    "initial_pair": [
+      4,
+      2
+    ],
+    "total_images_registered": 26,
+    "total_images_in_dataset": 26,
+    "registration_rate_pct": 100.0,
+    "final_global_bundle_adjustment": {
+      "residuals": 64000,
+      "parameters": 24200,
+      "estimated_3d_points": 8014,
+      "estimated_observations": 32000,
+      "estimated_mean_track_length": 3.99,
+      "iterations": 3,
+      "time_seconds": 0.333621,
+      "initial_cost_px": 0.445304,
+      "final_cost_px": 0.444546,
+      "termination": "Convergence"
+    },
+    "total_retriangulated_observations": 408,
+    "elapsed_time_minutes": 1.011
+  },
+  "images_with_fewest_points_seen": [
+    {
+      "image_id": 23,
+      "cumulative_registered": 4,
+      "points_seen": 8,
+      "total_model_points_at_step": 3435
+    },
+    {
+      "image_id": 23,
+      "cumulative_registered": 4,
+      "points_seen": 8,
+      "total_model_points_at_step": 3435
+    },
+    {
+      "image_id": 4,
+      "cumulative_registered": 3,
+      "points_seen": 8,
+      "total_model_points_at_step": 4679
+    },
+    {
+      "image_id": 4,
+      "cumulative_registered": 3,
+      "points_seen": 8,
+      "total_model_points_at_step": 4679
+    },
+    {
+      "image_id": 8,
+      "cumulative_registered": 3,
+      "points_seen": 10,
+      "total_model_points_at_step": 3193
+    }
+  ],
+  "per_image_registration_table": [
+    {
+      "image_id": 1,
+      "cumulative_registered": 3,
+      "points_seen": 1264,
+      "total_model_points_at_step": 4435
+    },
+    {
+      "image_id": 6,
+      "cumulative_registered": 3,
+      "points_seen": 648,
+      "total_model_points_at_step": 4816
+    },
+    {
+      "image_id": 3,
+      "cumulative_registered": 3,
+      "points_seen": 576,
+      "total_model_points_at_step": 1627
+    },
+    {
+      "image_id": 7,
+      "cumulative_registered": 3,
+      "points_seen": 377,
+      "total_model_points_at_step": 4617
+    },
+    {
+      "image_id": 5,
+      "cumulative_registered": 3,
+      "points_seen": 103,
+      "total_model_points_at_step": 1606
+    },
+    {
+      "image_id": 9,
+      "cumulative_registered": 3,
+      "points_seen": 82,
+      "total_model_points_at_step": 4160
+    },
+    {
+      "image_id": 10,
+      "cumulative_registered": 3,
+      "points_seen": 74,
+      "total_model_points_at_step": 4632
+    },
+    {
+      "image_id": 11,
+      "cumulative_registered": 3,
+      "points_seen": 34,
+      "total_model_points_at_step": 5106
+    },
+    {
+      "image_id": 18,
+      "cumulative_registered": 3,
+      "points_seen": 32,
+      "total_model_points_at_step": 5198
+    },
+    {
+      "image_id": 16,
+      "cumulative_registered": 3,
+      "points_seen": 24,
+      "total_model_points_at_step": 5136
+    },
+    {
+      "image_id": 17,
+      "cumulative_registered": 3,
+      "points_seen": 36,
+      "total_model_points_at_step": 3590
+    },
+    {
+      "image_id": 12,
+      "cumulative_registered": 3,
+      "points_seen": 19,
+      "total_model_points_at_step": 4058
+    },
+    {
+      "image_id": 20,
+      "cumulative_registered": 3,
+      "points_seen": 25,
+      "total_model_points_at_step": 4958
+    },
+    {
+      "image_id": 19,
+      "cumulative_registered": 3,
+      "points_seen": 26,
+      "total_model_points_at_step": 1170
+    },
+    {
+      "image_id": 13,
+      "cumulative_registered": 3,
+      "points_seen": 23,
+      "total_model_points_at_step": 2718
+    },
+    {
+      "image_id": 26,
+      "cumulative_registered": 3,
+      "points_seen": 14,
+      "total_model_points_at_step": 1341
+    },
+    {
+      "image_id": 8,
+      "cumulative_registered": 3,
+      "points_seen": 10,
+      "total_model_points_at_step": 3193
+    },
+    {
+      "image_id": 25,
+      "cumulative_registered": 3,
+      "points_seen": 17,
+      "total_model_points_at_step": 1935
+    },
+    {
+      "image_id": 21,
+      "cumulative_registered": 3,
+      "points_seen": 12,
+      "total_model_points_at_step": 2611
+    },
+    {
+      "image_id": 1,
+      "cumulative_registered": 3,
+      "points_seen": 1264,
+      "total_model_points_at_step": 4435
+    },
+    {
+      "image_id": 6,
+      "cumulative_registered": 3,
+      "points_seen": 648,
+      "total_model_points_at_step": 4816
+    },
+    {
+      "image_id": 3,
+      "cumulative_registered": 3,
+      "points_seen": 576,
+      "total_model_points_at_step": 1627
+    },
+    {
+      "image_id": 7,
+      "cumulative_registered": 3,
+      "points_seen": 377,
+      "total_model_points_at_step": 4617
+    },
+    {
+      "image_id": 5,
+      "cumulative_registered": 3,
+      "points_seen": 103,
+      "total_model_points_at_step": 1606
+    },
+    {
+      "image_id": 9,
+      "cumulative_registered": 3,
+      "points_seen": 82,
+      "total_model_points_at_step": 4160
+    },
+    {
+      "image_id": 10,
+      "cumulative_registered": 3,
+      "points_seen": 74,
+      "total_model_points_at_step": 4632
+    },
+    {
+      "image_id": 11,
+      "cumulative_registered": 3,
+      "points_seen": 34,
+      "total_model_points_at_step": 5106
+    },
+    {
+      "image_id": 18,
+      "cumulative_registered": 3,
+      "points_seen": 32,
+      "total_model_points_at_step": 5198
+    },
+    {
+      "image_id": 16,
+      "cumulative_registered": 3,
+      "points_seen": 24,
+      "total_model_points_at_step": 5136
+    },
+    {
+      "image_id": 17,
+      "cumulative_registered": 3,
+      "points_seen": 36,
+      "total_model_points_at_step": 3590
+    },
+    {
+      "image_id": 12,
+      "cumulative_registered": 3,
+      "points_seen": 19,
+      "total_model_points_at_step": 4058
+    },
+    {
+      "image_id": 20,
+      "cumulative_registered": 3,
+      "points_seen": 25,
+      "total_model_points_at_step": 4958
+    },
+    {
+      "image_id": 19,
+      "cumulative_registered": 3,
+      "points_seen": 26,
+      "total_model_points_at_step": 1170
+    },
+    {
+      "image_id": 13,
+      "cumulative_registered": 3,
+      "points_seen": 23,
+      "total_model_points_at_step": 2718
+    },
+    {
+      "image_id": 26,
+      "cumulative_registered": 3,
+      "points_seen": 14,
+      "total_model_points_at_step": 1341
+    },
+    {
+      "image_id": 8,
+      "cumulative_registered": 3,
+      "points_seen": 10,
+      "total_model_points_at_step": 3193
+    },
+    {
+      "image_id": 25,
+      "cumulative_registered": 3,
+      "points_seen": 17,
+      "total_model_points_at_step": 1935
+    },
+    {
+      "image_id": 21,
+      "cumulative_registered": 3,
+      "points_seen": 12,
+      "total_model_points_at_step": 2611
+    },
+    {
+      "image_id": 4,
+      "cumulative_registered": 3,
+      "points_seen": 810,
+      "total_model_points_at_step": 4679
+    },
+    {
+      "image_id": 8,
+      "cumulative_registered": 3,
+      "points_seen": 738,
+      "total_model_points_at_step": 3193
+    },
+    {
+      "image_id": 1,
+      "cumulative_registered": 3,
+      "points_seen": 656,
+      "total_model_points_at_step": 4435
+    },
+    {
+      "image_id": 2,
+      "cumulative_registered": 3,
+      "points_seen": 327,
+      "total_model_points_at_step": 3314
+    },
+    {
+      "image_id": 10,
+      "cumulative_registered": 3,
+      "points_seen": 183,
+      "total_model_points_at_step": 4632
+    },
+    {
+      "image_id": 11,
+      "cumulative_registered": 3,
+      "points_seen": 184,
+      "total_model_points_at_step": 5106
+    },
+    {
+      "image_id": 9,
+      "cumulative_registered": 3,
+      "points_seen": 147,
+      "total_model_points_at_step": 4160
+    },
+    {
+      "image_id": 12,
+      "cumulative_registered": 3,
+      "points_seen": 131,
+      "total_model_points_at_step": 4058
+    },
+    {
+      "image_id": 13,
+      "cumulative_registered": 3,
+      "points_seen": 92,
+      "total_model_points_at_step": 2718
+    },
+    {
+      "image_id": 3,
+      "cumulative_registered": 3,
+      "points_seen": 80,
+      "total_model_points_at_step": 1627
+    },
+    {
+      "image_id": 16,
+      "cumulative_registered": 3,
+      "points_seen": 76,
+      "total_model_points_at_step": 5136
+    },
+    {
+      "image_id": 18,
+      "cumulative_registered": 3,
+      "points_seen": 50,
+      "total_model_points_at_step": 5198
+    },
+    {
+      "image_id": 14,
+      "cumulative_registered": 3,
+      "points_seen": 46,
+      "total_model_points_at_step": 2727
+    },
+    {
+      "image_id": 5,
+      "cumulative_registered": 3,
+      "points_seen": 32,
+      "total_model_points_at_step": 1606
+    },
+    {
+      "image_id": 24,
+      "cumulative_registered": 3,
+      "points_seen": 11,
+      "total_model_points_at_step": 2934
+    },
+    {
+      "image_id": 4,
+      "cumulative_registered": 3,
+      "points_seen": 810,
+      "total_model_points_at_step": 4679
+    },
+    {
+      "image_id": 8,
+      "cumulative_registered": 3,
+      "points_seen": 738,
+      "total_model_points_at_step": 3193
+    },
+    {
+      "image_id": 1,
+      "cumulative_registered": 3,
+      "points_seen": 656,
+      "total_model_points_at_step": 4435
+    },
+    {
+      "image_id": 2,
+      "cumulative_registered": 3,
+      "points_seen": 327,
+      "total_model_points_at_step": 3314
+    },
+    {
+      "image_id": 10,
+      "cumulative_registered": 3,
+      "points_seen": 183,
+      "total_model_points_at_step": 4632
+    },
+    {
+      "image_id": 11,
+      "cumulative_registered": 3,
+      "points_seen": 184,
+      "total_model_points_at_step": 5106
+    },
+    {
+      "image_id": 9,
+      "cumulative_registered": 3,
+      "points_seen": 147,
+      "total_model_points_at_step": 4160
+    },
+    {
+      "image_id": 12,
+      "cumulative_registered": 3,
+      "points_seen": 131,
+      "total_model_points_at_step": 4058
+    },
+    {
+      "image_id": 13,
+      "cumulative_registered": 3,
+      "points_seen": 92,
+      "total_model_points_at_step": 2718
+    },
+    {
+      "image_id": 3,
+      "cumulative_registered": 3,
+      "points_seen": 80,
+      "total_model_points_at_step": 1627
+    },
+    {
+      "image_id": 16,
+      "cumulative_registered": 3,
+      "points_seen": 76,
+      "total_model_points_at_step": 5136
+    },
+    {
+      "image_id": 18,
+      "cumulative_registered": 3,
+      "points_seen": 50,
+      "total_model_points_at_step": 5198
+    },
+    {
+      "image_id": 14,
+      "cumulative_registered": 3,
+      "points_seen": 46,
+      "total_model_points_at_step": 2727
+    },
+    {
+      "image_id": 5,
+      "cumulative_registered": 3,
+      "points_seen": 32,
+      "total_model_points_at_step": 1606
+    },
+    {
+      "image_id": 24,
+      "cumulative_registered": 3,
+      "points_seen": 11,
+      "total_model_points_at_step": 2934
+    },
+    {
+      "image_id": 4,
+      "cumulative_registered": 3,
+      "points_seen": 957,
+      "total_model_points_at_step": 4679
+    },
+    {
+      "image_id": 2,
+      "cumulative_registered": 4,
+      "points_seen": 1520,
+      "total_model_points_at_step": 3314
+    },
+    {
+      "image_id": 7,
+      "cumulative_registered": 4,
+      "points_seen": 1043,
+      "total_model_points_at_step": 4617
+    },
+    {
+      "image_id": 3,
+      "cumulative_registered": 4,
+      "points_seen": 591,
+      "total_model_points_at_step": 1627
+    },
+    {
+      "image_id": 9,
+      "cumulative_registered": 4,
+      "points_seen": 277,
+      "total_model_points_at_step": 4160
+    },
+    {
+      "image_id": 8,
+      "cumulative_registered": 4,
+      "points_seen": 341,
+      "total_model_points_at_step": 3193
+    },
+    {
+      "image_id": 10,
+      "cumulative_registered": 4,
+      "points_seen": 210,
+      "total_model_points_at_step": 4632
+    },
+    {
+      "image_id": 11,
+      "cumulative_registered": 4,
+      "points_seen": 197,
+      "total_model_points_at_step": 5106
+    },
+    {
+      "image_id": 5,
+      "cumulative_registered": 4,
+      "points_seen": 146,
+      "total_model_points_at_step": 1606
+    },
+    {
+      "image_id": 13,
+      "cumulative_registered": 4,
+      "points_seen": 100,
+      "total_model_points_at_step": 2718
+    },
+    {
+      "image_id": 16,
+      "cumulative_registered": 4,
+      "points_seen": 78,
+      "total_model_points_at_step": 5136
+    },
+    {
+      "image_id": 12,
+      "cumulative_registered": 4,
+      "points_seen": 62,
+      "total_model_points_at_step": 4058
+    },
+    {
+      "image_id": 18,
+      "cumulative_registered": 4,
+      "points_seen": 72,
+      "total_model_points_at_step": 5198
+    },
+    {
+      "image_id": 20,
+      "cumulative_registered": 4,
+      "points_seen": 30,
+      "total_model_points_at_step": 4958
+    },
+    {
+      "image_id": 19,
+      "cumulative_registered": 4,
+      "points_seen": 30,
+      "total_model_points_at_step": 1170
+    },
+    {
+      "image_id": 17,
+      "cumulative_registered": 4,
+      "points_seen": 24,
+      "total_model_points_at_step": 3590
+    },
+    {
+      "image_id": 21,
+      "cumulative_registered": 4,
+      "points_seen": 17,
+      "total_model_points_at_step": 2611
+    },
+    {
+      "image_id": 25,
+      "cumulative_registered": 4,
+      "points_seen": 20,
+      "total_model_points_at_step": 1935
+    },
+    {
+      "image_id": 26,
+      "cumulative_registered": 4,
+      "points_seen": 15,
+      "total_model_points_at_step": 1341
+    },
+    {
+      "image_id": 23,
+      "cumulative_registered": 4,
+      "points_seen": 8,
+      "total_model_points_at_step": 3435
+    },
+    {
+      "image_id": 2,
+      "cumulative_registered": 4,
+      "points_seen": 1520,
+      "total_model_points_at_step": 3314
+    },
+    {
+      "image_id": 7,
+      "cumulative_registered": 4,
+      "points_seen": 1043,
+      "total_model_points_at_step": 4617
+    },
+    {
+      "image_id": 3,
+      "cumulative_registered": 4,
+      "points_seen": 591,
+      "total_model_points_at_step": 1627
+    },
+    {
+      "image_id": 9,
+      "cumulative_registered": 4,
+      "points_seen": 277,
+      "total_model_points_at_step": 4160
+    },
+    {
+      "image_id": 8,
+      "cumulative_registered": 4,
+      "points_seen": 341,
+      "total_model_points_at_step": 3193
+    },
+    {
+      "image_id": 10,
+      "cumulative_registered": 4,
+      "points_seen": 210,
+      "total_model_points_at_step": 4632
+    },
+    {
+      "image_id": 11,
+      "cumulative_registered": 4,
+      "points_seen": 197,
+      "total_model_points_at_step": 5106
+    },
+    {
+      "image_id": 5,
+      "cumulative_registered": 4,
+      "points_seen": 146,
+      "total_model_points_at_step": 1606
+    },
+    {
+      "image_id": 13,
+      "cumulative_registered": 4,
+      "points_seen": 100,
+      "total_model_points_at_step": 2718
+    },
+    {
+      "image_id": 16,
+      "cumulative_registered": 4,
+      "points_seen": 78,
+      "total_model_points_at_step": 5136
+    },
+    {
+      "image_id": 12,
+      "cumulative_registered": 4,
+      "points_seen": 62,
+      "total_model_points_at_step": 4058
+    },
+    {
+      "image_id": 18,
+      "cumulative_registered": 4,
+      "points_seen": 72,
+      "total_model_points_at_step": 5198
+    },
+    {
+      "image_id": 20,
+      "cumulative_registered": 4,
+      "points_seen": 30,
+      "total_model_points_at_step": 4958
+    },
+    {
+      "image_id": 19,
+      "cumulative_registered": 4,
+      "points_seen": 30,
+      "total_model_points_at_step": 1170
+    },
+    {
+      "image_id": 17,
+      "cumulative_registered": 4,
+      "points_seen": 24,
+      "total_model_points_at_step": 3590
+    },
+    {
+      "image_id": 21,
+      "cumulative_registered": 4,
+      "points_seen": 17,
+      "total_model_points_at_step": 2611
+    },
+    {
+      "image_id": 25,
+      "cumulative_registered": 4,
+      "points_seen": 20,
+      "total_model_points_at_step": 1935
+    },
+    {
+      "image_id": 26,
+      "cumulative_registered": 4,
+      "points_seen": 15,
+      "total_model_points_at_step": 1341
+    },
+    {
+      "image_id": 23,
+      "cumulative_registered": 4,
+      "points_seen": 8,
+      "total_model_points_at_step": 3435
+    },
+    {
+      "image_id": 4,
+      "cumulative_registered": 3,
+      "points_seen": 595,
+      "total_model_points_at_step": 4679
+    },
+    {
+      "image_id": 6,
+      "cumulative_registered": 3,
+      "points_seen": 578,
+      "total_model_points_at_step": 4816
+    },
+    {
+      "image_id": 2,
+      "cumulative_registered": 3,
+      "points_seen": 332,
+      "total_model_points_at_step": 3314
+    },
+    {
+      "image_id": 8,
+      "cumulative_registered": 3,
+      "points_seen": 139,
+      "total_model_points_at_step": 3193
+    },
+    {
+      "image_id": 10,
+      "cumulative_registered": 3,
+      "points_seen": 91,
+      "total_model_points_at_step": 4632
+    },
+    {
+      "image_id": 9,
+      "cumulative_registered": 3,
+      "points_seen": 89,
+      "total_model_points_at_step": 4160
+    },
+    {
+      "image_id": 11,
+      "cumulative_registered": 3,
+      "points_seen": 77,
+      "total_model_points_at_step": 5106
+    },
+    {
+      "image_id": 3,
+      "cumulative_registered": 3,
+      "points_seen": 64,
+      "total_model_points_at_step": 1627
+    },
+    {
+      "image_id": 13,
+      "cumulative_registered": 3,
+      "points_seen": 45,
+      "total_model_points_at_step": 2718
+    },
+    {
+      "image_id": 16,
+      "cumulative_registered": 3,
+      "points_seen": 33,
+      "total_model_points_at_step": 5136
+    },
+    {
+      "image_id": 5,
+      "cumulative_registered": 3,
+      "points_seen": 38,
+      "total_model_points_at_step": 1606
+    },
+    {
+      "image_id": 12,
+      "cumulative_registered": 3,
+      "points_seen": 23,
+      "total_model_points_at_step": 4058
+    },
+    {
+      "image_id": 18,
+      "cumulative_registered": 3,
+      "points_seen": 25,
+      "total_model_points_at_step": 5198
+    },
+    {
+      "image_id": 4,
+      "cumulative_registered": 3,
+      "points_seen": 595,
+      "total_model_points_at_step": 4679
+    },
+    {
+      "image_id": 6,
+      "cumulative_registered": 3,
+      "points_seen": 578,
+      "total_model_points_at_step": 4816
+    },
+    {
+      "image_id": 2,
+      "cumulative_registered": 3,
+      "points_seen": 332,
+      "total_model_points_at_step": 3314
+    },
+    {
+      "image_id": 8,
+      "cumulative_registered": 3,
+      "points_seen": 139,
+      "total_model_points_at_step": 3193
+    },
+    {
+      "image_id": 10,
+      "cumulative_registered": 3,
+      "points_seen": 91,
+      "total_model_points_at_step": 4632
+    },
+    {
+      "image_id": 9,
+      "cumulative_registered": 3,
+      "points_seen": 89,
+      "total_model_points_at_step": 4160
+    },
+    {
+      "image_id": 11,
+      "cumulative_registered": 3,
+      "points_seen": 77,
+      "total_model_points_at_step": 5106
+    },
+    {
+      "image_id": 3,
+      "cumulative_registered": 3,
+      "points_seen": 64,
+      "total_model_points_at_step": 1627
+    },
+    {
+      "image_id": 13,
+      "cumulative_registered": 3,
+      "points_seen": 45,
+      "total_model_points_at_step": 2718
+    },
+    {
+      "image_id": 16,
+      "cumulative_registered": 3,
+      "points_seen": 33,
+      "total_model_points_at_step": 5136
+    },
+    {
+      "image_id": 5,
+      "cumulative_registered": 3,
+      "points_seen": 38,
+      "total_model_points_at_step": 1606
+    },
+    {
+      "image_id": 12,
+      "cumulative_registered": 3,
+      "points_seen": 23,
+      "total_model_points_at_step": 4058
+    },
+    {
+      "image_id": 18,
+      "cumulative_registered": 3,
+      "points_seen": 25,
+      "total_model_points_at_step": 5198
+    },
+    {
+      "image_id": 16,
+      "cumulative_registered": 3,
+      "points_seen": 1084,
+      "total_model_points_at_step": 5136
+    },
+    {
+      "image_id": 17,
+      "cumulative_registered": 3,
+      "points_seen": 796,
+      "total_model_points_at_step": 3590
+    },
+    {
+      "image_id": 22,
+      "cumulative_registered": 3,
+      "points_seen": 112,
+      "total_model_points_at_step": 3895
+    },
+    {
+      "image_id": 24,
+      "cumulative_registered": 3,
+      "points_seen": 96,
+      "total_model_points_at_step": 2934
+    },
+    {
+      "image_id": 23,
+      "cumulative_registered": 3,
+      "points_seen": 117,
+      "total_model_points_at_step": 3435
+    },
+    {
+      "image_id": 12,
+      "cumulative_registered": 3,
+      "points_seen": 67,
+      "total_model_points_at_step": 4058
+    },
+    {
+      "image_id": 13,
+      "cumulative_registered": 3,
+      "points_seen": 90,
+      "total_model_points_at_step": 2718
+    },
+    {
+      "image_id": 14,
+      "cumulative_registered": 3,
+      "points_seen": 41,
+      "total_model_points_at_step": 2727
+    },
+    {
+      "image_id": 5,
+      "cumulative_registered": 3,
+      "points_seen": 66,
+      "total_model_points_at_step": 1606
+    },
+    {
+      "image_id": 9,
+      "cumulative_registered": 3,
+      "points_seen": 80,
+      "total_model_points_at_step": 4160
+    },
+    {
+      "image_id": 21,
+      "cumulative_registered": 3,
+      "points_seen": 68,
+      "total_model_points_at_step": 2611
+    },
+    {
+      "image_id": 10,
+      "cumulative_registered": 3,
+      "points_seen": 41,
+      "total_model_points_at_step": 4632
+    },
+    {
+      "image_id": 11,
+      "cumulative_registered": 3,
+      "points_seen": 27,
+      "total_model_points_at_step": 5106
+    },
+    {
+      "image_id": 25,
+      "cumulative_registered": 3,
+      "points_seen": 36,
+      "total_model_points_at_step": 1935
+    },
+    {
+      "image_id": 19,
+      "cumulative_registered": 3,
+      "points_seen": 34,
+      "total_model_points_at_step": 1170
+    },
+    {
+      "image_id": 26,
+      "cumulative_registered": 3,
+      "points_seen": 25,
+      "total_model_points_at_step": 1341
+    },
+    {
+      "image_id": 2,
+      "cumulative_registered": 3,
+      "points_seen": 15,
+      "total_model_points_at_step": 3314
+    },
+    {
+      "image_id": 1,
+      "cumulative_registered": 3,
+      "points_seen": 13,
+      "total_model_points_at_step": 4435
+    },
+    {
+      "image_id": 4,
+      "cumulative_registered": 3,
+      "points_seen": 8,
+      "total_model_points_at_step": 4679
+    },
+    {
+      "image_id": 16,
+      "cumulative_registered": 3,
+      "points_seen": 1084,
+      "total_model_points_at_step": 5136
+    },
+    {
+      "image_id": 17,
+      "cumulative_registered": 3,
+      "points_seen": 796,
+      "total_model_points_at_step": 3590
+    },
+    {
+      "image_id": 22,
+      "cumulative_registered": 3,
+      "points_seen": 112,
+      "total_model_points_at_step": 3895
+    },
+    {
+      "image_id": 24,
+      "cumulative_registered": 3,
+      "points_seen": 96,
+      "total_model_points_at_step": 2934
+    },
+    {
+      "image_id": 23,
+      "cumulative_registered": 3,
+      "points_seen": 117,
+      "total_model_points_at_step": 3435
+    },
+    {
+      "image_id": 12,
+      "cumulative_registered": 3,
+      "points_seen": 67,
+      "total_model_points_at_step": 4058
+    },
+    {
+      "image_id": 13,
+      "cumulative_registered": 3,
+      "points_seen": 90,
+      "total_model_points_at_step": 2718
+    },
+    {
+      "image_id": 14,
+      "cumulative_registered": 3,
+      "points_seen": 41,
+      "total_model_points_at_step": 2727
+    },
+    {
+      "image_id": 5,
+      "cumulative_registered": 3,
+      "points_seen": 66,
+      "total_model_points_at_step": 1606
+    },
+    {
+      "image_id": 9,
+      "cumulative_registered": 3,
+      "points_seen": 80,
+      "total_model_points_at_step": 4160
+    },
+    {
+      "image_id": 21,
+      "cumulative_registered": 3,
+      "points_seen": 68,
+      "total_model_points_at_step": 2611
+    },
+    {
+      "image_id": 10,
+      "cumulative_registered": 3,
+      "points_seen": 41,
+      "total_model_points_at_step": 4632
+    },
+    {
+      "image_id": 11,
+      "cumulative_registered": 3,
+      "points_seen": 27,
+      "total_model_points_at_step": 5106
+    },
+    {
+      "image_id": 25,
+      "cumulative_registered": 3,
+      "points_seen": 36,
+      "total_model_points_at_step": 1935
+    },
+    {
+      "image_id": 19,
+      "cumulative_registered": 3,
+      "points_seen": 34,
+      "total_model_points_at_step": 1170
+    },
+    {
+      "image_id": 26,
+      "cumulative_registered": 3,
+      "points_seen": 25,
+      "total_model_points_at_step": 1341
+    },
+    {
+      "image_id": 2,
+      "cumulative_registered": 3,
+      "points_seen": 15,
+      "total_model_points_at_step": 3314
+    },
+    {
+      "image_id": 1,
+      "cumulative_registered": 3,
+      "points_seen": 13,
+      "total_model_points_at_step": 4435
+    },
+    {
+      "image_id": 4,
+      "cumulative_registered": 3,
+      "points_seen": 8,
+      "total_model_points_at_step": 4679
+    },
+    {
+      "image_id": 20,
+      "cumulative_registered": 3,
+      "points_seen": 1090,
+      "total_model_points_at_step": 4958
+    },
+    {
+      "image_id": 13,
+      "cumulative_registered": 3,
+      "points_seen": 533,
+      "total_model_points_at_step": 2718
+    },
+    {
+      "image_id": 17,
+      "cumulative_registered": 3,
+      "points_seen": 255,
+      "total_model_points_at_step": 3590
+    },
+    {
+      "image_id": 10,
+      "cumulative_registered": 3,
+      "points_seen": 144,
+      "total_model_points_at_step": 4632
+    },
+    {
+      "image_id": 9,
+      "cumulative_registered": 3,
+      "points_seen": 165,
+      "total_model_points_at_step": 4160
+    },
+    {
+      "image_id": 11,
+      "cumulative_registered": 3,
+      "points_seen": 101,
+      "total_model_points_at_step": 5106
+    },
+    {
+      "image_id": 12,
+      "cumulative_registered": 3,
+      "points_seen": 80,
+      "total_model_points_at_step": 4058
+    },
+    {
+      "image_id": 5,
+      "cumulative_registered": 3,
+      "points_seen": 76,
+      "total_model_points_at_step": 1606
+    },
+    {
+      "image_id": 23,
+      "cumulative_registered": 3,
+      "points_seen": 65,
+      "total_model_points_at_step": 3435
+    },
+    {
+      "image_id": 7,
+      "cumulative_registered": 3,
+      "points_seen": 51,
+      "total_model_points_at_step": 4617
+    },
+    {
+      "image_id": 8,
+      "cumulative_registered": 3,
+      "points_seen": 45,
+      "total_model_points_at_step": 3193
+    },
+    {
+      "image_id": 24,
+      "cumulative_registered": 3,
+      "points_seen": 45,
+      "total_model_points_at_step": 2934
+    },
+    {
+      "image_id": 6,
+      "cumulative_registered": 3,
+      "points_seen": 48,
+      "total_model_points_at_step": 4816
+    },
+    {
+      "image_id": 22,
+      "cumulative_registered": 3,
+      "points_seen": 45,
+      "total_model_points_at_step": 3895
+    },
+    {
+      "image_id": 21,
+      "cumulative_registered": 3,
+      "points_seen": 37,
+      "total_model_points_at_step": 2611
+    },
+    {
+      "image_id": 1,
+      "cumulative_registered": 3,
+      "points_seen": 33,
+      "total_model_points_at_step": 4435
+    },
+    {
+      "image_id": 25,
+      "cumulative_registered": 3,
+      "points_seen": 31,
+      "total_model_points_at_step": 1935
+    },
+    {
+      "image_id": 4,
+      "cumulative_registered": 3,
+      "points_seen": 25,
+      "total_model_points_at_step": 4679
+    },
+    {
+      "image_id": 14,
+      "cumulative_registered": 3,
+      "points_seen": 20,
+      "total_model_points_at_step": 2727
+    },
+    {
+      "image_id": 26,
+      "cumulative_registered": 3,
+      "points_seen": 17,
+      "total_model_points_at_step": 1341
+    },
+    {
+      "image_id": 2,
+      "cumulative_registered": 3,
+      "points_seen": 10,
+      "total_model_points_at_step": 3314
+    },
+    {
+      "image_id": 20,
+      "cumulative_registered": 3,
+      "points_seen": 1090,
+      "total_model_points_at_step": 4958
+    },
+    {
+      "image_id": 13,
+      "cumulative_registered": 3,
+      "points_seen": 533,
+      "total_model_points_at_step": 2718
+    },
+    {
+      "image_id": 17,
+      "cumulative_registered": 3,
+      "points_seen": 255,
+      "total_model_points_at_step": 3590
+    },
+    {
+      "image_id": 10,
+      "cumulative_registered": 3,
+      "points_seen": 144,
+      "total_model_points_at_step": 4632
+    },
+    {
+      "image_id": 9,
+      "cumulative_registered": 3,
+      "points_seen": 165,
+      "total_model_points_at_step": 4160
+    },
+    {
+      "image_id": 11,
+      "cumulative_registered": 3,
+      "points_seen": 101,
+      "total_model_points_at_step": 5106
+    },
+    {
+      "image_id": 12,
+      "cumulative_registered": 3,
+      "points_seen": 80,
+      "total_model_points_at_step": 4058
+    },
+    {
+      "image_id": 5,
+      "cumulative_registered": 3,
+      "points_seen": 76,
+      "total_model_points_at_step": 1606
+    },
+    {
+      "image_id": 23,
+      "cumulative_registered": 3,
+      "points_seen": 65,
+      "total_model_points_at_step": 3435
+    },
+    {
+      "image_id": 7,
+      "cumulative_registered": 3,
+      "points_seen": 51,
+      "total_model_points_at_step": 4617
+    },
+    {
+      "image_id": 8,
+      "cumulative_registered": 3,
+      "points_seen": 45,
+      "total_model_points_at_step": 3193
+    },
+    {
+      "image_id": 24,
+      "cumulative_registered": 3,
+      "points_seen": 45,
+      "total_model_points_at_step": 2934
+    },
+    {
+      "image_id": 6,
+      "cumulative_registered": 3,
+      "points_seen": 48,
+      "total_model_points_at_step": 4816
+    },
+    {
+      "image_id": 22,
+      "cumulative_registered": 3,
+      "points_seen": 45,
+      "total_model_points_at_step": 3895
+    },
+    {
+      "image_id": 21,
+      "cumulative_registered": 3,
+      "points_seen": 37,
+      "total_model_points_at_step": 2611
+    },
+    {
+      "image_id": 1,
+      "cumulative_registered": 3,
+      "points_seen": 33,
+      "total_model_points_at_step": 4435
+    },
+    {
+      "image_id": 25,
+      "cumulative_registered": 3,
+      "points_seen": 31,
+      "total_model_points_at_step": 1935
+    },
+    {
+      "image_id": 4,
+      "cumulative_registered": 3,
+      "points_seen": 25,
+      "total_model_points_at_step": 4679
+    },
+    {
+      "image_id": 14,
+      "cumulative_registered": 3,
+      "points_seen": 20,
+      "total_model_points_at_step": 2727
+    },
+    {
+      "image_id": 26,
+      "cumulative_registered": 3,
+      "points_seen": 17,
+      "total_model_points_at_step": 1341
+    },
+    {
+      "image_id": 2,
+      "cumulative_registered": 3,
+      "points_seen": 10,
+      "total_model_points_at_step": 3314
+    },
+    {
+      "image_id": 10,
+      "cumulative_registered": 3,
+      "points_seen": 676,
+      "total_model_points_at_step": 4632
+    },
+    {
+      "image_id": 14,
+      "cumulative_registered": 3,
+      "points_seen": 445,
+      "total_model_points_at_step": 2727
+    },
+    {
+      "image_id": 9,
+      "cumulative_registered": 3,
+      "points_seen": 204,
+      "total_model_points_at_step": 4160
+    },
+    {
+      "image_id": 7,
+      "cumulative_registered": 3,
+      "points_seen": 153,
+      "total_model_points_at_step": 4617
+    },
+    {
+      "image_id": 8,
+      "cumulative_registered": 3,
+      "points_seen": 161,
+      "total_model_points_at_step": 3193
+    },
+    {
+      "image_id": 16,
+      "cumulative_registered": 3,
+      "points_seen": 104,
+      "total_model_points_at_step": 5136
+    },
+    {
+      "image_id": 6,
+      "cumulative_registered": 3,
+      "points_seen": 100,
+      "total_model_points_at_step": 4816
+    },
+    {
+      "image_id": 18,
+      "cumulative_registered": 3,
+      "points_seen": 77,
+      "total_model_points_at_step": 5198
+    },
+    {
+      "image_id": 13,
+      "cumulative_registered": 3,
+      "points_seen": 41,
+      "total_model_points_at_step": 2718
+    },
+    {
+      "image_id": 4,
+      "cumulative_registered": 3,
+      "points_seen": 37,
+      "total_model_points_at_step": 4679
+    },
+    {
+      "image_id": 20,
+      "cumulative_registered": 3,
+      "points_seen": 33,
+      "total_model_points_at_step": 4958
+    },
+    {
+      "image_id": 1,
+      "cumulative_registered": 3,
+      "points_seen": 25,
+      "total_model_points_at_step": 4435
+    },
+    {
+      "image_id": 17,
+      "cumulative_registered": 3,
+      "points_seen": 12,
+      "total_model_points_at_step": 3590
+    },
+    {
+      "image_id": 2,
+      "cumulative_registered": 3,
+      "points_seen": 11,
+      "total_model_points_at_step": 3314
+    },
+    {
+      "image_id": 10,
+      "cumulative_registered": 3,
+      "points_seen": 676,
+      "total_model_points_at_step": 4632
+    },
+    {
+      "image_id": 14,
+      "cumulative_registered": 3,
+      "points_seen": 445,
+      "total_model_points_at_step": 2727
+    },
+    {
+      "image_id": 9,
+      "cumulative_registered": 3,
+      "points_seen": 204,
+      "total_model_points_at_step": 4160
+    },
+    {
+      "image_id": 7,
+      "cumulative_registered": 3,
+      "points_seen": 153,
+      "total_model_points_at_step": 4617
+    },
+    {
+      "image_id": 8,
+      "cumulative_registered": 3,
+      "points_seen": 161,
+      "total_model_points_at_step": 3193
+    },
+    {
+      "image_id": 16,
+      "cumulative_registered": 3,
+      "points_seen": 104,
+      "total_model_points_at_step": 5136
+    },
+    {
+      "image_id": 6,
+      "cumulative_registered": 3,
+      "points_seen": 100,
+      "total_model_points_at_step": 4816
+    },
+    {
+      "image_id": 18,
+      "cumulative_registered": 3,
+      "points_seen": 77,
+      "total_model_points_at_step": 5198
+    },
+    {
+      "image_id": 13,
+      "cumulative_registered": 3,
+      "points_seen": 41,
+      "total_model_points_at_step": 2718
+    },
+    {
+      "image_id": 4,
+      "cumulative_registered": 3,
+      "points_seen": 37,
+      "total_model_points_at_step": 4679
+    },
+    {
+      "image_id": 20,
+      "cumulative_registered": 3,
+      "points_seen": 33,
+      "total_model_points_at_step": 4958
+    },
+    {
+      "image_id": 1,
+      "cumulative_registered": 3,
+      "points_seen": 25,
+      "total_model_points_at_step": 4435
+    },
+    {
+      "image_id": 17,
+      "cumulative_registered": 3,
+      "points_seen": 12,
+      "total_model_points_at_step": 3590
+    },
+    {
+      "image_id": 2,
+      "cumulative_registered": 3,
+      "points_seen": 11,
+      "total_model_points_at_step": 3314
+    },
+    {
+      "image_id": 10,
+      "cumulative_registered": 3,
+      "points_seen": 732,
+      "total_model_points_at_step": 4632
+    },
+    {
+      "image_id": 12,
+      "cumulative_registered": 3,
+      "points_seen": 196,
+      "total_model_points_at_step": 4058
+    },
+    {
+      "image_id": 13,
+      "cumulative_registered": 3,
+      "points_seen": 151,
+      "total_model_points_at_step": 2718
+    },
+    {
+      "image_id": 6,
+      "cumulative_registered": 3,
+      "points_seen": 143,
+      "total_model_points_at_step": 4816
+    },
+    {
+      "image_id": 16,
+      "cumulative_registered": 3,
+      "points_seen": 136,
+      "total_model_points_at_step": 5136
+    },
+    {
+      "image_id": 7,
+      "cumulative_registered": 3,
+      "points_seen": 126,
+      "total_model_points_at_step": 4617
+    },
+    {
+      "image_id": 8,
+      "cumulative_registered": 3,
+      "points_seen": 111,
+      "total_model_points_at_step": 3193
+    },
+    {
+      "image_id": 4,
+      "cumulative_registered": 3,
+      "points_seen": 119,
+      "total_model_points_at_step": 4679
+    },
+    {
+      "image_id": 1,
+      "cumulative_registered": 3,
+      "points_seen": 106,
+      "total_model_points_at_step": 4435
+    },
+    {
+      "image_id": 5,
+      "cumulative_registered": 3,
+      "points_seen": 107,
+      "total_model_points_at_step": 1606
+    },
+    {
+      "image_id": 18,
+      "cumulative_registered": 3,
+      "points_seen": 73,
+      "total_model_points_at_step": 5198
+    },
+    {
+      "image_id": 2,
+      "cumulative_registered": 3,
+      "points_seen": 25,
+      "total_model_points_at_step": 3314
+    },
+    {
+      "image_id": 10,
+      "cumulative_registered": 3,
+      "points_seen": 732,
+      "total_model_points_at_step": 4632
+    },
+    {
+      "image_id": 12,
+      "cumulative_registered": 3,
+      "points_seen": 196,
+      "total_model_points_at_step": 4058
+    },
+    {
+      "image_id": 13,
+      "cumulative_registered": 3,
+      "points_seen": 151,
+      "total_model_points_at_step": 2718
+    },
+    {
+      "image_id": 6,
+      "cumulative_registered": 3,
+      "points_seen": 143,
+      "total_model_points_at_step": 4816
+    },
+    {
+      "image_id": 16,
+      "cumulative_registered": 3,
+      "points_seen": 136,
+      "total_model_points_at_step": 5136
+    },
+    {
+      "image_id": 7,
+      "cumulative_registered": 3,
+      "points_seen": 126,
+      "total_model_points_at_step": 4617
+    },
+    {
+      "image_id": 8,
+      "cumulative_registered": 3,
+      "points_seen": 111,
+      "total_model_points_at_step": 3193
+    },
+    {
+      "image_id": 4,
+      "cumulative_registered": 3,
+      "points_seen": 119,
+      "total_model_points_at_step": 4679
+    },
+    {
+      "image_id": 1,
+      "cumulative_registered": 3,
+      "points_seen": 106,
+      "total_model_points_at_step": 4435
+    },
+    {
+      "image_id": 5,
+      "cumulative_registered": 3,
+      "points_seen": 107,
+      "total_model_points_at_step": 1606
+    },
+    {
+      "image_id": 18,
+      "cumulative_registered": 3,
+      "points_seen": 73,
+      "total_model_points_at_step": 5198
+    },
+    {
+      "image_id": 2,
+      "cumulative_registered": 3,
+      "points_seen": 25,
+      "total_model_points_at_step": 3314
+    },
+    {
+      "image_id": 18,
+      "cumulative_registered": 3,
+      "points_seen": 490,
+      "total_model_points_at_step": 5198
+    },
+    {
+      "image_id": 20,
+      "cumulative_registered": 4,
+      "points_seen": 1000,
+      "total_model_points_at_step": 4958
+    },
+    {
+      "image_id": 17,
+      "cumulative_registered": 5,
+      "points_seen": 906,
+      "total_model_points_at_step": 3590
+    },
+    {
+      "image_id": 10,
+      "cumulative_registered": 6,
+      "points_seen": 357,
+      "total_model_points_at_step": 4632
+    },
+    {
+      "image_id": 9,
+      "cumulative_registered": 7,
+      "points_seen": 416,
+      "total_model_points_at_step": 4160
+    },
+    {
+      "image_id": 11,
+      "cumulative_registered": 8,
+      "points_seen": 423,
+      "total_model_points_at_step": 5106
+    },
+    {
+      "image_id": 12,
+      "cumulative_registered": 9,
+      "points_seen": 238,
+      "total_model_points_at_step": 4058
+    },
+    {
+      "image_id": 7,
+      "cumulative_registered": 10,
+      "points_seen": 313,
+      "total_model_points_at_step": 4617
+    },
+    {
+      "image_id": 6,
+      "cumulative_registered": 11,
+      "points_seen": 593,
+      "total_model_points_at_step": 4816
+    },
+    {
+      "image_id": 8,
+      "cumulative_registered": 12,
+      "points_seen": 661,
+      "total_model_points_at_step": 3193
+    },
+    {
+      "image_id": 4,
+      "cumulative_registered": 13,
+      "points_seen": 492,
+      "total_model_points_at_step": 4679
+    },
+    {
+      "image_id": 1,
+      "cumulative_registered": 14,
+      "points_seen": 929,
+      "total_model_points_at_step": 4435
+    },
+    {
+      "image_id": 2,
+      "cumulative_registered": 15,
+      "points_seen": 938,
+      "total_model_points_at_step": 3314
+    },
+    {
+      "image_id": 3,
+      "cumulative_registered": 16,
+      "points_seen": 415,
+      "total_model_points_at_step": 1627
+    },
+    {
+      "image_id": 5,
+      "cumulative_registered": 17,
+      "points_seen": 373,
+      "total_model_points_at_step": 1606
+    },
+    {
+      "image_id": 14,
+      "cumulative_registered": 18,
+      "points_seen": 189,
+      "total_model_points_at_step": 2727
+    },
+    {
+      "image_id": 23,
+      "cumulative_registered": 19,
+      "points_seen": 156,
+      "total_model_points_at_step": 3435
+    },
+    {
+      "image_id": 22,
+      "cumulative_registered": 20,
+      "points_seen": 167,
+      "total_model_points_at_step": 3895
+    },
+    {
+      "image_id": 24,
+      "cumulative_registered": 21,
+      "points_seen": 786,
+      "total_model_points_at_step": 2934
+    },
+    {
+      "image_id": 21,
+      "cumulative_registered": 22,
+      "points_seen": 587,
+      "total_model_points_at_step": 2611
+    },
+    {
+      "image_id": 25,
+      "cumulative_registered": 23,
+      "points_seen": 307,
+      "total_model_points_at_step": 1935
+    },
+    {
+      "image_id": 26,
+      "cumulative_registered": 24,
+      "points_seen": 531,
+      "total_model_points_at_step": 1341
+    },
+    {
+      "image_id": 19,
+      "cumulative_registered": 25,
+      "points_seen": 158,
+      "total_model_points_at_step": 1170
+    },
+    {
+      "image_id": 15,
+      "cumulative_registered": 26,
+      "points_seen": 111,
+      "total_model_points_at_step": 1035
+    }
+  ]
+}

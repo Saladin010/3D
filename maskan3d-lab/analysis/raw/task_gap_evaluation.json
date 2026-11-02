@@ -1,0 +1,103 @@
+{
+  "specs_evaluation": [
+    {
+      "criterion": "1. Dollhouse look",
+      "minimum": "No white holes, real colours from the photos",
+      "ambition": "Straight closed walls, clean furniture, close to Matterport",
+      "current_measured": "Real colors present, but 48.31% floor holes and unbounded floaters",
+      "status": "NOT MET",
+      "evidence": "02_ply_analysis.md#Section-3-Table-4",
+      "gap_closure": "Clipping planes for ceiling removal, dense downward pitch camera angles to fill floor"
+    },
+    {
+      "criterion": "2. Dimensions accuracy",
+      "minimum": "Close to reality (error up to 10 cm in wall length)",
+      "ambition": "Error 5 cm or less",
+      "current_measured": "UNKNOWN (Arbitrary COLMAP normalized scale)",
+      "status": "NOT YET TESTED / UNKNOWN",
+      "evidence": "02_ply_analysis.md#Important-Notice",
+      "gap_closure": "Physical reference measurement (1-meter tape or laser measurement) to establish metric scale factor"
+    },
+    {
+      "criterion": "3. Interactive viewer",
+      "minimum": "Smooth rotate / zoom / pan by touch",
+      "ambition": "Ceiling cut and fast focus on any room",
+      "current_measured": "Basic touch orbit available in SuperSplat/GaussianSplats3D, ceiling cut missing",
+      "status": "PARTIALLY MET",
+      "evidence": "repos/GaussianSplats3D/README.md#L16-L19",
+      "gap_closure": "Implement custom Three.js / WebGL shader with user-controlled clipping plane and camera waypoints"
+    },
+    {
+      "criterion": "4. Mobile performance",
+      "minimum": "At least 30 FPS",
+      "ambition": "50 FPS or more",
+      "current_measured": "UNKNOWN (Untested on physical device; CPU sort bottleneck documented)",
+      "status": "NOT YET TESTED / UNKNOWN",
+      "evidence": "repos/GaussianSplats3D/README.md#L38-L40",
+      "gap_closure": "Profile on physical mid-range Android phone via Chrome DevTools Remote Debugging"
+    },
+    {
+      "criterion": "5. File size for viewing",
+      "minimum": "25 MB or less",
+      "ambition": "15 MB or less",
+      "current_measured": "Original: 89.72 MB; Scenario b: 20.26 MB; Scenario c: 19.27 MB; Scenario d: 13.49 MB",
+      "status": "MET (under Scenario c/d)",
+      "evidence": "02_ply_analysis.md#Section-3-Table-5",
+      "gap_closure": "Automate SH degree 0 + normal removal + opacity pruning in the export pipeline"
+    },
+    {
+      "criterion": "6. Processing time per apartment",
+      "minimum": "Less than 1 hour",
+      "ambition": "Less than 20 minutes",
+      "current_measured": "COLMAP: 1.01 min, Splatfacto 5k: ~3.5 min (Total 1 room: ~5 min)",
+      "status": "MET (Minimum met, Ambition achievable for full apartment)",
+      "evidence": "01_cameras_and_inputs.md#Section-3-Table-2",
+      "gap_closure": "Maintain sequential / exhaustive matching optimization on cloud GPU"
+    },
+    {
+      "criterion": "7. Capture input",
+      "minimum": "80 to 200 photos or a walking video",
+      "ambition": "Fewer captures with same quality",
+      "current_measured": "26 photos (1 room test only)",
+      "status": "NOT MET (for apartment scope)",
+      "evidence": "01_cameras_and_inputs.md#Section-3",
+      "gap_closure": "Execute 80-120 photo perimeter walk or continuous 2-minute walking video across all rooms"
+    },
+    {
+      "criterion": "8. Equipment",
+      "minimum": "Ordinary Android phone only",
+      "ambition": "No extra devices",
+      "current_measured": "Samsung Galaxy A15 only (no LiDAR, no rig)",
+      "status": "MET",
+      "evidence": "analysis/raw/image_quality.csv",
+      "gap_closure": "None required; equipment spec fully satisfied"
+    },
+    {
+      "criterion": "9. Cost",
+      "minimum": "Free or cheap to run (Colab T4 at start)",
+      "ambition": "Cheap, scalable infrastructure",
+      "current_measured": "$0.00 (Kaggle T4 free tier, ~5-6 GPU minutes used)",
+      "status": "MET",
+      "evidence": "p.md, kaggle execution logs",
+      "gap_closure": "Prepare serverless GPU backend (Modal/RunPod at ~$0.10/run) for commercial scaling"
+    },
+    {
+      "criterion": "10. Licences",
+      "minimum": "Open-source components with commercially safe licences",
+      "ambition": "No non-commercial component at all",
+      "current_measured": "Nerfstudio (Apache 2.0), gsplat (Apache 2.0), SuperSplat (MIT) are safe; COLMAP SiftGPU is non-commercial",
+      "status": "PARTIALLY MET (Commercial Risk in SiftGPU)",
+      "evidence": "repos/colmap/src/thirdparty/SiftGPU/LICENSE",
+      "gap_closure": "Run COLMAP with CPU SIFT (--SiftExtraction.use_gpu 0) or commercial-safe matchers"
+    },
+    {
+      "criterion": "11. UI",
+      "minimum": "Arabic, right-to-left",
+      "ambition": "(none)",
+      "current_measured": "No Arabic locale or RTL layout in existing repos",
+      "status": "NOT MET",
+      "evidence": "repos/supersplat/static/locales/",
+      "gap_closure": "Build custom React/Three.js viewer shell with RTL CSS and Arabic UI microcopy"
+    }
+  ]
+}

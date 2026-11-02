@@ -1,0 +1,39 @@
+=== INPUT INVENTORY REPORT ===
+Total files: 28
+Total size: 122.11 MB
+
+Files Present:
+  - apartment_splat.ply | 89.719 MB | .ply
+  - colmap_mapper.log | 0.526 MB | .log
+  - images\٢٠٢٦١١٠١_١٨١٦٤٢.jpg | 1.117 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٦٤٨.jpg | 0.905 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٦٥٠.jpg | 1.103 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٦٥٢.jpg | 1.143 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٦٥٤.jpg | 1.254 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٦٥٧.jpg | 1.261 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٧٠٠.jpg | 1.28 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٧١٠.jpg | 1.07 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٧١٣.jpg | 1.218 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٧١٥.jpg | 1.284 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٧١٧.jpg | 1.334 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٧١٩.jpg | 1.432 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٧٢١.jpg | 1.515 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٧٢٥.jpg | 1.407 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٧٣٥.jpg | 1.169 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٧٣٩.jpg | 1.373 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٧٤٢.jpg | 1.418 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٧٤٤.jpg | 1.469 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٧٤٦.jpg | 1.466 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٧٤٩.jpg | 1.178 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٧٥٨.jpg | 1.41 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٨٠٠.jpg | 1.431 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٨٠٣.jpg | 0.99 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٨٠٥.jpg | 0.912 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٨٠٨.jpg | 0.873 MB | .jpg
+  - images\٢٠٢٦١١٠١_١٨١٨١٠.jpg | 0.857 MB | .jpg
+
+Missing Critical Artifacts:
+  [MISSING] transforms.json: Nerfstudio camera poses, intrinsics, and coordinate transform bounding box
+  [MISSING] colmap/sparse/0 (cameras.bin, images.bin, points3D.bin): COLMAP sparse reconstruction bundle containing 3D tie points and camera extrinsics/intrinsics
+  [MISSING] 4 visual screenshots: Visual captures of the rendered splat from multiple perspectives (top-down, eye-level, corner, zoom)
+  [MISSING] train.log / event logs: Tensorboard/Rich event logs for 5000 iterations

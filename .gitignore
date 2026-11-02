@@ -1,0 +1,30 @@
+# Third-party cloned repositories
+maskan3d-lab/repos/
+
+# Large legacy files & archives
+apartment_splat.ply
+*.zip
+
+# Python & Jupyter cache
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+*.egg-info/
+.pytest_cache/
+
+# Local temporary scratch scripts
+replace_cell8.py
+update_cell8.py
+patch_cell8.py
+apply_patch.py
+
+# Editor & workspace metadata
+.vscode/
+.idea/
+*.code-workspace
+
+# Raw dumps
+maskan3d-lab/outputs/
+maskan3d-lab/photos/
+data/

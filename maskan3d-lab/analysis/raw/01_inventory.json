@@ -1,0 +1,259 @@
+{
+  "summary": {
+    "total_files": 28,
+    "total_size_bytes": 128045222,
+    "total_size_mb": 122.11,
+    "image_count": 26,
+    "model_count": 1,
+    "log_count": 1,
+    "config_count": 0
+  },
+  "files": [
+    {
+      "filename": "apartment_splat.ply",
+      "relative_path": "apartment_splat.ply",
+      "size_bytes": 94077417,
+      "size_mb": 89.719,
+      "extension": ".ply",
+      "md5_prefix": "6ff08b7c03844c17161fd0cef9189115"
+    },
+    {
+      "filename": "colmap_mapper.log",
+      "relative_path": "colmap_mapper.log",
+      "size_bytes": 551109,
+      "size_mb": 0.526,
+      "extension": ".log",
+      "md5_prefix": "57c2c1e6c06910769100d3fe2e657e1b"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٦٤٢.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٦٤٢.jpg",
+      "size_bytes": 1171720,
+      "size_mb": 1.117,
+      "extension": ".jpg",
+      "md5_prefix": "8319af9e4de41c345c3ebaca98c331e6"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٦٤٨.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٦٤٨.jpg",
+      "size_bytes": 948845,
+      "size_mb": 0.905,
+      "extension": ".jpg",
+      "md5_prefix": "e18d3369562b5608021ef563f652e761"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٦٥٠.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٦٥٠.jpg",
+      "size_bytes": 1156539,
+      "size_mb": 1.103,
+      "extension": ".jpg",
+      "md5_prefix": "d8efc8284f446bb6ca08b52c512cc035"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٦٥٢.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٦٥٢.jpg",
+      "size_bytes": 1198927,
+      "size_mb": 1.143,
+      "extension": ".jpg",
+      "md5_prefix": "17ae4dd930433b47295ecd0537acf9f4"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٦٥٤.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٦٥٤.jpg",
+      "size_bytes": 1314978,
+      "size_mb": 1.254,
+      "extension": ".jpg",
+      "md5_prefix": "a121e353e459d6763d37c0b9d357a4d7"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٦٥٧.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٦٥٧.jpg",
+      "size_bytes": 1321978,
+      "size_mb": 1.261,
+      "extension": ".jpg",
+      "md5_prefix": "a0468bbae0d1ed598b815267c3d01c30"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٧٠٠.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٧٠٠.jpg",
+      "size_bytes": 1342067,
+      "size_mb": 1.28,
+      "extension": ".jpg",
+      "md5_prefix": "bc4dcb49e517c393c7b0397d654d5804"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٧١٠.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٧١٠.jpg",
+      "size_bytes": 1121679,
+      "size_mb": 1.07,
+      "extension": ".jpg",
+      "md5_prefix": "b4a92e1bd09118c1ab91bd987ca738b3"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٧١٣.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٧١٣.jpg",
+      "size_bytes": 1276852,
+      "size_mb": 1.218,
+      "extension": ".jpg",
+      "md5_prefix": "9778ecf54e267b16205563c920f5172c"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٧١٥.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٧١٥.jpg",
+      "size_bytes": 1346321,
+      "size_mb": 1.284,
+      "extension": ".jpg",
+      "md5_prefix": "5a761d6f9f47ab4d4d9b43e90947a254"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٧١٧.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٧١٧.jpg",
+      "size_bytes": 1398701,
+      "size_mb": 1.334,
+      "extension": ".jpg",
+      "md5_prefix": "fbd8756e669fdc72b5c7ef3aad3db4eb"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٧١٩.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٧١٩.jpg",
+      "size_bytes": 1501737,
+      "size_mb": 1.432,
+      "extension": ".jpg",
+      "md5_prefix": "fe19701e17aa4cdcb747b2712c58a175"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٧٢١.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٧٢١.jpg",
+      "size_bytes": 1588477,
+      "size_mb": 1.515,
+      "extension": ".jpg",
+      "md5_prefix": "9e0f6832e95fa07a6a435dd00fe20005"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٧٢٥.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٧٢٥.jpg",
+      "size_bytes": 1475065,
+      "size_mb": 1.407,
+      "extension": ".jpg",
+      "md5_prefix": "e71881e2c1adca638da8aa4a71cc7b48"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٧٣٥.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٧٣٥.jpg",
+      "size_bytes": 1225478,
+      "size_mb": 1.169,
+      "extension": ".jpg",
+      "md5_prefix": "d912b108872aae29c37f63ac47d2e4f6"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٧٣٩.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٧٣٩.jpg",
+      "size_bytes": 1440181,
+      "size_mb": 1.373,
+      "extension": ".jpg",
+      "md5_prefix": "bb400d0813e7933b05ebba87cbf515e4"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٧٤٢.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٧٤٢.jpg",
+      "size_bytes": 1486360,
+      "size_mb": 1.418,
+      "extension": ".jpg",
+      "md5_prefix": "967c7f0f5107987d7d437b3655588e89"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٧٤٤.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٧٤٤.jpg",
+      "size_bytes": 1540168,
+      "size_mb": 1.469,
+      "extension": ".jpg",
+      "md5_prefix": "7833a8d4a76c06c2995b019d6810b854"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٧٤٦.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٧٤٦.jpg",
+      "size_bytes": 1537586,
+      "size_mb": 1.466,
+      "extension": ".jpg",
+      "md5_prefix": "0de2f4f1d54e4208584f8702b8118b20"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٧٤٩.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٧٤٩.jpg",
+      "size_bytes": 1235287,
+      "size_mb": 1.178,
+      "extension": ".jpg",
+      "md5_prefix": "1550a07c034ad65d0a78db327570cd3f"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٧٥٨.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٧٥٨.jpg",
+      "size_bytes": 1478922,
+      "size_mb": 1.41,
+      "extension": ".jpg",
+      "md5_prefix": "3402f45eefa548e906e41535a86d1cb6"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٨٠٠.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٨٠٠.jpg",
+      "size_bytes": 1500614,
+      "size_mb": 1.431,
+      "extension": ".jpg",
+      "md5_prefix": "d9be367208f00bcb0374c731112d27b7"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٨٠٣.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٨٠٣.jpg",
+      "size_bytes": 1037741,
+      "size_mb": 0.99,
+      "extension": ".jpg",
+      "md5_prefix": "5aea5c20424f299b47979d026297dff9"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٨٠٥.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٨٠٥.jpg",
+      "size_bytes": 956294,
+      "size_mb": 0.912,
+      "extension": ".jpg",
+      "md5_prefix": "be723e36706c3d02d1498c46ebb434c9"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٨٠٨.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٨٠٨.jpg",
+      "size_bytes": 915499,
+      "size_mb": 0.873,
+      "extension": ".jpg",
+      "md5_prefix": "73285775c6219bc8e5ac0b985ba4cb54"
+    },
+    {
+      "filename": "٢٠٢٦١١٠١_١٨١٨١٠.jpg",
+      "relative_path": "images\\٢٠٢٦١١٠١_١٨١٨١٠.jpg",
+      "size_bytes": 898680,
+      "size_mb": 0.857,
+      "extension": ".jpg",
+      "md5_prefix": "876c359eefe2a94fb7fba2896201df4f"
+    }
+  ],
+  "missing_items": [
+    {
+      "item": "transforms.json",
+      "description": "Nerfstudio camera poses, intrinsics, and coordinate transform bounding box",
+      "impact_if_missing": "Camera trajectory, baseline distances, and co-visibility proxy cannot be MEASURED; requires INFERRED / UNKNOWN status"
+    },
+    {
+      "item": "colmap/sparse/0 (cameras.bin, images.bin, points3D.bin)",
+      "description": "COLMAP sparse reconstruction bundle containing 3D tie points and camera extrinsics/intrinsics",
+      "impact_if_missing": "Exact mean track length, point cloud density, and per-camera reprojection error cannot be directly parsed from binary"
+    },
+    {
+      "item": "4 visual screenshots",
+      "description": "Visual captures of the rendered splat from multiple perspectives (top-down, eye-level, corner, zoom)",
+      "impact_if_missing": "Direct visual evaluation is constrained to 'NOT PROVIDED' (Rule 3 restricts evaluation to exactly 4 provided screenshots)"
+    },
+    {
+      "item": "train.log / event logs",
+      "description": "Tensorboard/Rich event logs for 5000 iterations",
+      "impact_if_missing": "Training loss convergence curve and per-step PSNR metrics cannot be plotted across time"
+    }
+  ]
+}

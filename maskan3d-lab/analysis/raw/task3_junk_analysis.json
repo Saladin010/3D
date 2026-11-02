@@ -1,0 +1,57 @@
+{
+  "opacity_thresholds": {
+    "less_than_0_05": {
+      "count": 725,
+      "percent": 0.19
+    },
+    "less_than_0_10": {
+      "count": 5302,
+      "percent": 1.4
+    },
+    "less_than_0_30": {
+      "count": 77466,
+      "percent": 20.42
+    }
+  },
+  "giant_gaussians": {
+    "p99_max_scale_threshold": 0.4240013118167074,
+    "count": 3794,
+    "percent": 1.0,
+    "giant_volume": 44.42996649254743,
+    "all_volume": 143.54362392468926,
+    "volume_share_pct": 30.95
+  },
+  "spatial_outliers": {
+    "robust_bbox_p1_p99": {
+      "x": [
+        -10.985050106048584,
+        13.621298246383672
+      ],
+      "y": [
+        -5.214144525527954,
+        16.66567607879639
+      ],
+      "z": [
+        -13.461450939178468,
+        9.05084330558778
+      ]
+    },
+    "points_outside_robust_bbox": 17807,
+    "percent_outside_robust_bbox": 4.69
+  },
+  "knn_outlier_test": {
+    "subsample_size": 200000,
+    "k_neighbors": 10,
+    "median_dist": 0.026583,
+    "mad_dist": 0.012952,
+    "threshold": 0.084189,
+    "outliers_in_subsample": 33249,
+    "estimated_total_outliers": 63063,
+    "percent": 16.62
+  },
+  "junk_estimate": {
+    "total_junk_gaussians": 18567,
+    "junk_percentage": 4.89,
+    "confidence": "HIGH (based on direct quantitative opacity (<0.05) and spatial bounding percentiles)"
+  }
+}

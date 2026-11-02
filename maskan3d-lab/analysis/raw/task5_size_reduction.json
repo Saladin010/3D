@@ -1,0 +1,56 @@
+[
+  {
+    "scenario": "Original (exported by splatfacto)",
+    "scenario_code": "original",
+    "gaussian_count": 379338,
+    "size_bytes": 94077417,
+    "size_mb": 89.72,
+    "pct_of_25mb_target": 358.9,
+    "status": "MEASURED"
+  },
+  {
+    "scenario": "a. Remove normals only",
+    "scenario_code": "a_no_normals",
+    "gaussian_count": 379338,
+    "size_bytes": 89525245,
+    "size_mb": 85.38,
+    "pct_of_25mb_target": 341.5,
+    "status": "MEASURED"
+  },
+  {
+    "scenario": "b. SH Degree 0 only (drop f_rest) + no normals",
+    "scenario_code": "b_sh0_no_normals",
+    "gaussian_count": 379338,
+    "size_bytes": 21243290,
+    "size_mb": 20.26,
+    "pct_of_25mb_target": 81.0,
+    "status": "MEASURED"
+  },
+  {
+    "scenario": "c. Scenario (b) + prune opacity < 0.05 & spatial outliers",
+    "scenario_code": "c_filter_low_opac_and_outliers",
+    "gaussian_count": 360807,
+    "size_bytes": 20205554,
+    "size_mb": 19.27,
+    "pct_of_25mb_target": 77.1,
+    "status": "MEASURED"
+  },
+  {
+    "scenario": "d. Scenario (c) + prune lowest 30% opacity",
+    "scenario_code": "d_prune_lowest_30pct",
+    "gaussian_count": 252565,
+    "size_bytes": 14144002,
+    "size_mb": 13.49,
+    "pct_of_25mb_target": 54.0,
+    "status": "MEASURED"
+  },
+  {
+    "scenario": "e. Quantised / Compressed format (SOG / SuperSplat compressed PLY)",
+    "scenario_code": "e_compressed_quantized",
+    "gaussian_count": 360807,
+    "size_bytes": 6494526,
+    "size_mb": 6.19,
+    "pct_of_25mb_target": 24.8,
+    "status": "INFERRED (documented ratio in repos/supersplat is UNKNOWN; inferred based on 18 bytes/gaussian quantization standard: 16-bit pos, 8-bit scale/rot, 8-bit DC)"
+  }
+]

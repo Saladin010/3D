@@ -1,0 +1,372 @@
+{
+  "file_size_bytes": 94077417,
+  "file_size_mb": 89.72,
+  "num_gaussians": 379338,
+  "per_vertex_bytes": 248,
+  "header_size_bytes": 1593,
+  "normals_are_all_zero": true,
+  "normals_nonzero_count": 0,
+  "groups": {
+    "position": {
+      "properties_count": 3,
+      "bytes_per_vertex": 12,
+      "total_bytes": 4552056,
+      "total_mb": 4.34,
+      "percent_of_file": 4.84
+    },
+    "normals": {
+      "properties_count": 3,
+      "bytes_per_vertex": 12,
+      "total_bytes": 4552056,
+      "total_mb": 4.34,
+      "percent_of_file": 4.84
+    },
+    "dc_colour": {
+      "properties_count": 3,
+      "bytes_per_vertex": 12,
+      "total_bytes": 4552056,
+      "total_mb": 4.34,
+      "percent_of_file": 4.84
+    },
+    "higher_order_sh": {
+      "properties_count": 45,
+      "bytes_per_vertex": 180,
+      "total_bytes": 68280840,
+      "total_mb": 65.12,
+      "percent_of_file": 72.58
+    },
+    "opacity": {
+      "properties_count": 1,
+      "bytes_per_vertex": 4,
+      "total_bytes": 1517352,
+      "total_mb": 1.45,
+      "percent_of_file": 1.61
+    },
+    "scale": {
+      "properties_count": 3,
+      "bytes_per_vertex": 12,
+      "total_bytes": 4552056,
+      "total_mb": 4.34,
+      "percent_of_file": 4.84
+    },
+    "rotation": {
+      "properties_count": 4,
+      "bytes_per_vertex": 16,
+      "total_bytes": 6069408,
+      "total_mb": 5.79,
+      "percent_of_file": 6.45
+    }
+  },
+  "all_properties": [
+    {
+      "name": "x",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "y",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "z",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "nx",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "ny",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "nz",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_dc_0",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_dc_1",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_dc_2",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_0",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_1",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_2",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_3",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_4",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_5",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_6",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_7",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_8",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_9",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_10",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_11",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_12",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_13",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_14",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_15",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_16",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_17",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_18",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_19",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_20",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_21",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_22",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_23",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_24",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_25",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_26",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_27",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_28",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_29",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_30",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_31",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_32",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_33",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_34",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_35",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_36",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_37",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_38",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_39",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_40",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_41",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_42",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_43",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "f_rest_44",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "opacity",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "scale_0",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "scale_1",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "scale_2",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "rot_0",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "rot_1",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "rot_2",
+      "dtype": "f4",
+      "size_bytes": 4
+    },
+    {
+      "name": "rot_3",
+      "dtype": "f4",
+      "size_bytes": 4
+    }
+  ]
+}

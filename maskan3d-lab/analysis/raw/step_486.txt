@@ -1,0 +1,82 @@
+هناك نمط غريب جداً ومهم:
+* مع 21 صورة: سجل **2** صورة.
+* مع 46 صورة: سجل **2** صورة.
+* مع 26 صورة: سجل **2** صورة.
+
+ثبات الرقم عند **2 صورة بالضبط** في كل التجارب له تفسير تقني معروف جداً في COLMAP:
+
+### 🔍 ما الذي يحدث داخل COLMAP؟
+1. **الصور تطابقت بالفعل (Features & Matches نجحت):** كولماب استخرج آلاف المعالم وربط الصور ببعضها بنجاح.
+2. **لكن المشكلة في شرط الزاوية (Triangulation Angle):**
+   * كولماب يضع شرطاً صارماً افتراضياً اسمه `init_min_tri_angle = 16.0` (درجة).
+   * هذا الشرط ممتاز لتصوير المباني والشوارع المفتوحة من بعيد، لكن في **الغرف الداخلية والشقق (حيث المسافة قصيرة بين الجدران والموبايل)**، تكون زاوية التثليث بين لقطات المشي ما بين **4 إلى 8 درجات فقط**!
+   * فيعتبر كولماب أن الزاوية غير كافية لحساب العمق، ويوقف بناء النموذج الأول عند صورتين فقط، أو يقسم الغرفة إلى نماذج فرعية متعددة (`sparse/0` و `sparse/1` و `sparse/2`...)، بينما أداة nerfstudio تقرأ دائماً المجلد الأول `sparse/0` فقط!
+
+---
+
+### 🛠️ خلية الفحص والإصلاح الفوري (شغّلها في خلية جديدة في Kaggle):
+
+شغّل هذا الكود في خلية جديدة داخل Kaggle، وسيقوم بفحص قاعدة البيانات وإعادة بناء الكاميرات بالمعايير المناسبة للمشاهد الداخلية:
+
+```python
+import os
+import shutil
+import sqlite3
+from pathlib import Path
+
+colmap_dir = Path("/kaggle/working/data/nerfstudio/apartment/colmap")
+sparse_dir = colmap_dir / "sparse"
+db_path = colmap_dir / "database.db"
+images_dir = Path("/kaggle/working/data/nerfstudio/apartment/images")
+
+print("=" * 60)
+print("🔍 1. فحص مجلدات النماذج الحالية في colmap/sparse:")
+if sparse_dir.exists():
+    for sub in sorted(sparse_dir.iterdir()):
+        if sub.is_dir():
+            files = list(sub.glob("*.bin")) + list(sub.glob("*.txt"))
+            print(f"  📂 مجلد {sub.name}: يحتوي على {len(files)} ملفات")
+print("=" * 60)
+
+# 2. فحص عدد التطابقات الفعلية في قاعدة البيانات
+if db_path.exists():
+    conn = sqlite3.connect(db_path)
+    cur = conn.cursor()
+    cur.execute("SELECT count(*) FROM images")
+    n_imgs = cur.fetchone()[0]
+    cur.execute("SELECT count(*) FROM two_view_geometries WHERE rows >= 15")
+    n_good_pairs = cur.fetchone()[0]
+    print(f"📸 عدد الصور في قاعدة البيانات: {n_imgs}")
+    print(f"🔗 عدد الأزواج المتطابقة بنجاح (Matches >= 15): {n_good_pairs}")
+    print("=" * 60)
+    conn.close()
+
+# 3. إعادة بناء الـ Mapper بمعايير مخصصة للمشاهد الداخلية (Relaxed Triangulation Angle)
+print("🚀 3. جاري تشغيل COLMAP Mapper بمعايير مخصصة للغرف الداخلية...")
+custom_sparse = colmap_dir / "custom_sparse"
+if custom_sparse.exists():
+    shutil.rmtree(custom_sparse)
+custom_sparse.mkdir(parents=True, exist_ok=True)
+
+# تشغيل البناء بزاوية تثليث 3 درجات بدلاً من 16، وبحد أدنى 8 تطابقات
+!colmap mapper \
+    --database_path "{db_path}" \
+    --image_path "{images_dir}" \
+    --output_path "{custom_sparse}" \
+    --Mapper.init_min_tri_angle 3.0 \
+    --Mapper.min_num_matches 8 \
+    --Mapper.abs_pose_min_num_inliers 8 \
+    --Mapper.ba_global_function_tolerance 1e-6
+
+# فحص النتيجة الجديدة
+print("=" * 60)
+print("📊 النتيجة بعد التعديل:")
+for sub in sorted(custom_sparse.iterdir()):
+    if sub.is_dir():
+        # فحص عدد الصور المسجلة
+        img_bin = sub / "images.bin"
+        if img_bin.exists():
+            print(f"  🎉 نموذج {sub.name}: تم إنشاؤه بنجاح!")
+```
+
+**شغّل هذه الخلية وانسخ لي النتيجة التي ستظهر في النهاية!** ستكشف لنا فوراً هل تم إنشاء نموذج كامل بعد تخفيف قيد زاوية الـ 16 درجة أم كم زوجاً متطابقاً وجد.

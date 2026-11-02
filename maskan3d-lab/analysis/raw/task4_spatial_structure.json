@@ -1,0 +1,113 @@
+{
+  "up_axis": {
+    "determined_axis": "X",
+    "justification": "RANSAC dominant horizontal plane normal is aligned with X axis with component magnitude 0.869"
+  },
+  "planes_detected": [
+    {
+      "plane_id": 1,
+      "normal": [
+        0.869,
+        0.4568,
+        -0.1902
+      ],
+      "d": -0.929,
+      "inliers_count": 12557,
+      "inlier_ratio": 0.2511,
+      "type": "floor_or_ceiling"
+    },
+    {
+      "plane_id": 2,
+      "normal": [
+        0.5969,
+        0.8022,
+        -0.0148
+      ],
+      "d": 0.0868,
+      "inliers_count": 7618,
+      "inlier_ratio": 0.1524,
+      "type": "wall"
+    },
+    {
+      "plane_id": 3,
+      "normal": [
+        0.7361,
+        0.1617,
+        -0.6572
+      ],
+      "d": 0.1797,
+      "inliers_count": 5821,
+      "inlier_ratio": 0.1164,
+      "type": "floor_or_ceiling"
+    },
+    {
+      "plane_id": 4,
+      "normal": [
+        0.2636,
+        0.7501,
+        -0.6065
+      ],
+      "d": -1.2691,
+      "inliers_count": 4643,
+      "inlier_ratio": 0.0929,
+      "type": "wall"
+    },
+    {
+      "plane_id": 5,
+      "normal": [
+        -0.0682,
+        0.5175,
+        0.8529
+      ],
+      "d": -1.1446,
+      "inliers_count": 4242,
+      "inlier_ratio": 0.0848,
+      "type": "wall"
+    }
+  ],
+  "orthogonality_checks": [
+    {
+      "pair": "wall_1_vs_floor",
+      "dot_product": 0.888,
+      "angle_deg": 27.38,
+      "is_perpendicular": false
+    },
+    {
+      "pair": "wall_2_vs_floor",
+      "dot_product": 0.6871,
+      "angle_deg": 46.6,
+      "is_perpendicular": false
+    },
+    {
+      "pair": "wall_3_vs_floor",
+      "dot_product": 0.0149,
+      "angle_deg": 89.15,
+      "is_perpendicular": true
+    },
+    {
+      "pair": "wall_1_vs_wall_2",
+      "dot_product": 0.768,
+      "angle_deg": 39.83,
+      "relationship": "oblique"
+    },
+    {
+      "pair": "wall_1_vs_wall_3",
+      "dot_product": 0.3618,
+      "angle_deg": 68.79,
+      "relationship": "oblique"
+    },
+    {
+      "pair": "wall_2_vs_wall_3",
+      "dot_product": -0.1471,
+      "angle_deg": 81.54,
+      "relationship": "perpendicular"
+    }
+  ],
+  "floor_plane_density": {
+    "grid_resolution": "40x40",
+    "interior_grid_cells": 1600,
+    "empty_hole_cells": 773,
+    "hole_ratio_pct": 48.31,
+    "finding": "Substantial floor holes detected in floor plane density grid"
+  }
+}
